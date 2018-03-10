@@ -1,0 +1,61 @@
+.form {
+	input, textarea {
+		-webkit-appearance: none;
+		outline: none;
+		width: 100%;
+		padding: 5px 0 5px 10px;
+		height: 35px;
+		background: $black;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		margin-bottom: 10px;
+		border: 4px solid $yellow;
+		color: #FFF;
+		@include type-2(14);
+		&:hover, &:active, &:focus {
+			outline: none;
+ 			background: $black;
+ 			border: 4px solid $white;
+ 		}
+	}
+	textarea {
+		height: 140px;
+		margin-bottom: 20px;
+	}
+	label {
+		@include type-2(14);
+		color: $white;
+		display: block;
+		margin-bottom: 5px;
+	}
+}
+
+.form .nao-aparece {
+	display: none;
+	visibility: hidden;
+}
+
+#enviar {
+	display: block;
+	@include type-1(14);
+	border: 4px solid $yellow;
+	background: $black;
+	padding: 8px 40px;
+	text-align: center;
+	color: $yellow;
+	&:hover, &:focus {
+		border: 4px solid $white;
+		color: $white;
+	}
+}
+
+#form__notification {
+	@include type-1(18);
+	color: green;
+}
+
+#form__notification--error {
+	@include type-1(18);
+	color: red;
+}

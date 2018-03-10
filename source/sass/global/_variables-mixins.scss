@@ -1,0 +1,82 @@
+// Colors
+
+$black: #000;
+$white: #FFF;
+$yellow: #fec63e;
+
+// Mixins
+
+@mixin title-line {
+	content: '';
+	display: block;
+	width: 60px;
+	height: 4px;
+}
+
+@mixin typePrimary {
+	font-weight: bold;
+	font-family: 'Nunito', sans-serif, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+@mixin typeSecondary {
+	font-weight: 400;
+	font-family: 'Nunito', "sans-serif";
+}
+
+@mixin type-1($size) {
+	@include typePrimary;
+	@if $size == 14 {
+		font-size: 0.875em;
+		line-height: 1.42857142857143em;	
+	}
+	@if $size == 18 {
+		font-size: 1.125em;
+		line-height: 1.3888889em;	
+	}
+	@if $size == 24 {
+		font-size: 1.5em;
+		line-height: 1.25em;	
+	}
+	@if $size == 36 {
+		font-size: 2.25em;
+		line-height: 1.6666667em;	
+	}
+	@if $size == 48 {
+		font-size: 3em;
+		line-height: 1em;	
+	}
+	@if $size == 60 {
+		font-size: 3.75em;
+		line-height: 1em;	
+	}
+}
+
+@mixin type-2($size) {
+	@include typeSecondary;
+	@if $size == 14 {
+		font-size: 0.875em;
+		line-height: 1.42857142857143em;	
+	}
+	@if $size == 18 {
+		font-size: 1.125em;
+		line-height: 1.3888889em;	
+	}
+	@if $size == 24 {
+		font-size: 1.5em;
+		line-height: 1.25em;	
+	}
+	@if $size == 36 {
+		font-size: 2.25em;
+		line-height: 1.6666667em;	
+	}
+	@if $size == 48 {
+		font-size: 3em;
+		line-height: 1em;	
+	}
+	@if $size == 60 {
+		font-size: 3.75em;
+		line-height: 1em;	
+	}
+}
